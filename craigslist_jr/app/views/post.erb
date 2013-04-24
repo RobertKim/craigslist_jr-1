@@ -1,0 +1,28 @@
+<div class="Container">
+ 
+ <h1>Craigslist JR | Post</h1>
+
+ <form action="/new_post" method="post">
+  <br>
+  <input type="text" placeholder="Title" name="user_input[title]"><br>
+  <input type="text" name="user_input[description]"><br>
+  <input type="text" placeholder="Price" name="user_input[price]"><br>
+
+ <select name="user_input[category_id]">
+  <% @categories.each do |c| %>
+   
+    <option value="<%= c.id %>" ><%= c.name %></option>
+
+  <% end %>
+</select>
+<br>
+   <input type="submit" value="Submit">
+   
+</form>
+
+</div>
+  
+
+
+
+ 

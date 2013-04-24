@@ -1,0 +1,15 @@
+<div class="Container">
+ 
+ <h1>Craigslist JR | <%= @category.name %></h1>
+
+  <% @posts.each do |post| %>
+  <tr>
+        <td><a href="/post/<%= post.id %>"><%= post.title %></a></td><br>
+        <td><%= post.description %></td><br>
+        <td>$<%= post.price %></td><br>
+        <br>
+  </tr>
+  <% end %>
+ 
+
+</div>

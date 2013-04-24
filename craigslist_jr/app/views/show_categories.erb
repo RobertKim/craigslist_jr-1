@@ -1,0 +1,22 @@
+<div class="Container">
+
+ <h1>Craigslist JR | Categories</h1>
+
+
+ <table border="1">
+  <tr>
+    <th>Title</th>
+  </tr>
+
+  <% Category.all.each do |cat| %>
+  <tr>
+
+    <td><a href="category/<%= cat.id %>"><%= cat.name %></a></td>
+        
+      
+  </tr>
+  <% end %>
+
+ </table> 
+</div>
+
